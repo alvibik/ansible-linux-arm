@@ -1,0 +1,6 @@
+---
+# tasks file for restart_kesl
+- name: Restart  kesl
+  ansible.builtin.shell: systemctl restart kesl
+  args:
+    executable: /bin/bash
